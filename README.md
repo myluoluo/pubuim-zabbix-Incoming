@@ -21,20 +21,18 @@
     `Name`： `PubuIM`  
     `Subject`： `{TRIGGER.STATUS}: {TRIGGER.NAME}`  
     `operations -> New`： `Send message to users: Admin (Zabbix Administrator) via PubuIM`  
-    `Message`：
-```
-Trigger: {TRIGGER.NAME}
-Trigger status: {TRIGGER.STATUS}
-Trigger severity: {TRIGGER.SEVERITY}
-
-Hostname: {HOST.NAME}
-
-Item value:
-{ITEM.NAME1} ({ITEM.KEY1}): {ITEM.VALUE1}
-
-Original event ID: {EVENT.ID}
-ITEM ID: {ITEM.ID1}  
-```
+    `Message`：  
+    Trigger: {TRIGGER.NAME}  
+    Trigger status: {TRIGGER.STATUS}  
+    Trigger severity: {TRIGGER.SEVERITY}  
+      
+    Hostname: {HOST.NAME}  
+      
+    Item value:  
+    {ITEM.NAME1} ({ITEM.KEY1}): {ITEM.VALUE1}  
+      
+    Original event ID: {EVENT.ID}  
+    ITEM ID: {ITEM.ID1}  
 
 4. 转至 `零信` 添加 `Incoming`，并获取 `Token`  
     > https://hooks.pubu.im/services/[Token]  
